@@ -3,7 +3,7 @@
 from setuptools import setup
 
 setup(name='tap-appstore',
-      version='0.2.1',
+      version='0.2.2',
       description='Singer.io tap for extracting data from the App Store Connect API',
       author='JustEdro',
       url='https://github.com/JustEdro',
@@ -11,7 +11,7 @@ setup(name='tap-appstore',
       py_modules=['tap-appstore'],
       install_requires=[
           'singer-python>=5.2.3',
-          'appstoreconnect==0.10.0',
+          'appstoreconnect @ git+https://github.com/jesuejunior/appstoreconnectapi.git@master#egg=appstoreconnectapi',
           'pytz>=2018.4'
       ],
       entry_points='''
