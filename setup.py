@@ -11,7 +11,7 @@ setup(name='tap-appstore',
       py_modules=['tap-appstore'],
       install_requires=[
           'singer-python>=5.2.3',
-          'appstoreconnect @ git+https://github.com/jesuejunior/appstoreconnectapi.git@master#egg=appstoreconnectapi',
+          'appstoreconnect @ git+https://github.com/sixcodes/appstoreconnectapi.git@master#egg=appstoreconnectapi',
           'pytz>=2018.4'
       ],
       entry_points='''
